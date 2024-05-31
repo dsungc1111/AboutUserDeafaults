@@ -13,6 +13,7 @@
 		8B3E9B7E2C099A14000D9D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E9B7D2C099A14000D9D22 /* Assets.xcassets */; };
 		8B3E9B812C099A14000D9D22 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E9B802C099A14000D9D22 /* Base */; };
 		8B3E9B8A2C099A54000D9D22 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B892C099A54000D9D22 /* EmotionViewController.swift */; };
+		8B3E9B8D2C09AC44000D9D22 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B8C2C09AC44000D9D22 /* BMIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8B3E9B802C099A14000D9D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B3E9B822C099A14000D9D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3E9B892C099A54000D9D22 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		8B3E9B8C2C09AC44000D9D22 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		8B3E9B732C099A13000D9D22 /* AboutUserDeafaults */ = {
 			isa = PBXGroup;
 			children = (
+				8B3E9B8B2C09AA5F000D9D22 /* BMI */,
 				8B3E9B882C099A39000D9D22 /* EmotionalDiary */,
 				8B3E9B742C099A13000D9D22 /* AppDelegate.swift */,
 				8B3E9B762C099A13000D9D22 /* SceneDelegate.swift */,
@@ -73,6 +76,14 @@
 				8B3E9B892C099A54000D9D22 /* EmotionViewController.swift */,
 			);
 			path = EmotionalDiary;
+			sourceTree = "<group>";
+		};
+		8B3E9B8B2C09AA5F000D9D22 /* BMI */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E9B8C2C09AC44000D9D22 /* BMIViewController.swift */,
+			);
+			path = BMI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3E9B8A2C099A54000D9D22 /* EmotionViewController.swift in Sources */,
+				8B3E9B8D2C09AC44000D9D22 /* BMIViewController.swift in Sources */,
 				8B3E9B752C099A13000D9D22 /* AppDelegate.swift in Sources */,
 				8B3E9B772C099A13000D9D22 /* SceneDelegate.swift in Sources */,
 			);
