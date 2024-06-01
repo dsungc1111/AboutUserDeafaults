@@ -14,6 +14,13 @@
 		8B3E9B812C099A14000D9D22 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E9B802C099A14000D9D22 /* Base */; };
 		8B3E9B8A2C099A54000D9D22 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B892C099A54000D9D22 /* EmotionViewController.swift */; };
 		8B3E9B8D2C09AC44000D9D22 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B8C2C09AC44000D9D22 /* BMIViewController.swift */; };
+		8B3E9B8F2C09BB97000D9D22 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B8E2C09BB97000D9D22 /* CityInfo.swift */; };
+		8B3E9B922C09BC89000D9D22 /* City.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E9B912C09BC89000D9D22 /* City.storyboard */; };
+		8B3E9B942C09BD88000D9D22 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B932C09BD88000D9D22 /* CityViewController.swift */; };
+		8B3E9B972C09BE42000D9D22 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B952C09BE42000D9D22 /* CityTableViewCell.swift */; };
+		8B3E9B982C09BE42000D9D22 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E9B962C09BE42000D9D22 /* CityTableViewCell.xib */; };
+		8B3E9B9A2C09C125000D9D22 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3E9B992C09C125000D9D22 /* Protocol.swift */; };
+		8B3E9B9E2C0A02BD000D9D22 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8B3E9B9D2C0A02BD000D9D22 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,12 @@
 		8B3E9B822C099A14000D9D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3E9B892C099A54000D9D22 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		8B3E9B8C2C09AC44000D9D22 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		8B3E9B8E2C09BB97000D9D22 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		8B3E9B912C09BC89000D9D22 /* City.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.storyboard; sourceTree = "<group>"; };
+		8B3E9B932C09BD88000D9D22 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		8B3E9B952C09BE42000D9D22 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		8B3E9B962C09BE42000D9D22 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		8B3E9B992C09C125000D9D22 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3E9B9E2C0A02BD000D9D22 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,14 +72,18 @@
 		8B3E9B732C099A13000D9D22 /* AboutUserDeafaults */ = {
 			isa = PBXGroup;
 			children = (
+				8B3E9B9B2C09C12A000D9D22 /* Protocol */,
+				8B3E9B902C09BC17000D9D22 /* travel */,
 				8B3E9B8B2C09AA5F000D9D22 /* BMI */,
 				8B3E9B882C099A39000D9D22 /* EmotionalDiary */,
 				8B3E9B742C099A13000D9D22 /* AppDelegate.swift */,
 				8B3E9B762C099A13000D9D22 /* SceneDelegate.swift */,
 				8B3E9B7A2C099A13000D9D22 /* Main.storyboard */,
+				8B3E9B912C09BC89000D9D22 /* City.storyboard */,
 				8B3E9B7D2C099A14000D9D22 /* Assets.xcassets */,
 				8B3E9B7F2C099A14000D9D22 /* LaunchScreen.storyboard */,
 				8B3E9B822C099A14000D9D22 /* Info.plist */,
+				8B3E9B8E2C09BB97000D9D22 /* CityInfo.swift */,
 			);
 			path = AboutUserDeafaults;
 			sourceTree = "<group>";
@@ -86,6 +104,24 @@
 			path = BMI;
 			sourceTree = "<group>";
 		};
+		8B3E9B902C09BC17000D9D22 /* travel */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E9B932C09BD88000D9D22 /* CityViewController.swift */,
+				8B3E9B952C09BE42000D9D22 /* CityTableViewCell.swift */,
+				8B3E9B962C09BE42000D9D22 /* CityTableViewCell.xib */,
+			);
+			path = travel;
+			sourceTree = "<group>";
+		};
+		8B3E9B9B2C09C12A000D9D22 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E9B992C09C125000D9D22 /* Protocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +138,9 @@
 			dependencies = (
 			);
 			name = AboutUserDeafaults;
+			packageProductDependencies = (
+				8B3E9B9D2C0A02BD000D9D22 /* Kingfisher */,
+			);
 			productName = AboutUserDeafaults;
 			productReference = 8B3E9B712C099A13000D9D22 /* AboutUserDeafaults.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 8B3E9B682C099A13000D9D22;
+			packageReferences = (
+				8B3E9B9C2C0A02BD000D9D22 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8B3E9B722C099A13000D9D22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,9 +186,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B3E9B982C09BE42000D9D22 /* CityTableViewCell.xib in Resources */,
 				8B3E9B7E2C099A14000D9D22 /* Assets.xcassets in Resources */,
 				8B3E9B812C099A14000D9D22 /* Base in Resources */,
 				8B3E9B7C2C099A13000D9D22 /* Base in Resources */,
+				8B3E9B922C09BC89000D9D22 /* City.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3E9B8A2C099A54000D9D22 /* EmotionViewController.swift in Sources */,
+				8B3E9B972C09BE42000D9D22 /* CityTableViewCell.swift in Sources */,
 				8B3E9B8D2C09AC44000D9D22 /* BMIViewController.swift in Sources */,
+				8B3E9B9A2C09C125000D9D22 /* Protocol.swift in Sources */,
+				8B3E9B8F2C09BB97000D9D22 /* CityInfo.swift in Sources */,
 				8B3E9B752C099A13000D9D22 /* AppDelegate.swift in Sources */,
 				8B3E9B772C099A13000D9D22 /* SceneDelegate.swift in Sources */,
+				8B3E9B942C09BD88000D9D22 /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B3E9B9C2C0A02BD000D9D22 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B3E9B9D2C0A02BD000D9D22 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B3E9B9C2C0A02BD000D9D22 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B3E9B692C099A13000D9D22 /* Project object */;
 }
